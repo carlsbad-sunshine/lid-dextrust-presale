@@ -49,7 +49,7 @@ export const providerOptions = {
   }
 };
 
-export const totalPresale = '400000000';
+export const totalPresale = '25000000';
 
 export const infura_ids = [
   '9d7be60b1fe34aa1933b7585f10772c4',
