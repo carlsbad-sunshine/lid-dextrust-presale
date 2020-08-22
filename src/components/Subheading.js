@@ -56,7 +56,7 @@ export default function Subheading({
             borderColor="lid.stroke"
             bg="lid.bg">
             <Text fontSize="18px" m="0" p="0" color="lid.fgMed">
-              Verified DARB Presale Contract
+              Verified DETS Presale Contract
             </Text>
             {addresses.presale ? (
               <Link
@@ -115,7 +115,7 @@ export default function Subheading({
               top="-3px"
             />
             <Text ml="10px" mt="5px" color="lid.bg" display="inline-block">
-              Your DARB Tokens
+              Your DETS Tokens
             </Text>
             <Text fontSize="38px" w="100%" fontWeight="bold">
               {maxShares !== '0'
@@ -193,7 +193,7 @@ export default function Subheading({
               top="-3px"
             />
             <Text ml="10px" mt="5px" color="lid.fgMed" display="inline-block">
-              Total Presale DARB
+              Total Presale DETS
             </Text>
             <Text fontSize="38px" w="100%" fontWeight="bold" color="lid.brand">
               {shortEther(toWei(totalPresale))}

@@ -28,7 +28,7 @@ export default function ReferralCode({
         w="100%"
         mb="20px"
         p="20px">
-        <CopyToClipboard text={'https://sale.dexarb.com/#/' + address}>
+        <CopyToClipboard text={'https://dextrust.lid.sh/#/' + address}>
           <Button
             display="block"
             color="lid.fgLight"
@@ -56,7 +56,7 @@ export default function ReferralCode({
           borderColor="lid.stroke"
           borderRadius="28px"
           w="100%">
-          https://darb.lid.sh/#/{address}
+          https://dextrust.lid.sh/#/{address}
         </Text>
       </Box>
       <Grid

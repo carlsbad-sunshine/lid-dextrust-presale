@@ -33,13 +33,13 @@ export default function Claimer({
         mb="20px"
         p="20px">
         <Text fontSize={{ base: '24px', sm: '36px' }} fontWeight="bold">
-          Claim Your DARB
+          Claim Your DETS
         </Text>
         <Text fontSize="18px" color="blue.500">
           2% released / hour
         </Text>
         <Text fontSize="18px" color="lid.fg">
-          DARB to Claim: {shortEther(accountRedeemable)}
+          DETS to Claim: {shortEther(accountRedeemable)}
         </Text>
         <Button
           variantColor="blue"
@@ -74,7 +74,7 @@ export default function Claimer({
           borderColor="lid.stroke"
           bg="lid.bg">
           <Text fontSize="18px" m="0" p="0" color="lid.fgMed">
-            Total DARB Claimed
+            Total DETS Claimed
           </Text>
           <Text fontSize="38px" w="100%" fontWeight="bold">
             {shortEther(accountClaimedTokens)}
@@ -88,7 +88,7 @@ export default function Claimer({
           borderColor="lid.stroke"
           bg="lid.bg">
           <Text fontSize="18px" m="0" p="0" color="lid.fgMed">
-            DARB / Hour
+            DETS / Hour
           </Text>
           <Text fontSize="38px" w="100%" fontWeight="bold">
             {maxShares !== '0'
@@ -114,7 +114,7 @@ export default function Claimer({
         mb="20px"
         p="20px">
         <Text fontSize="18px" color="lid.fg">
-          More DARB available to claim in
+          More DETS available to claim in
         </Text>
         <CountDownShort
           expiryTimestamp={

@@ -47,7 +47,7 @@ export default function DepositForm({
         border="solid 1px"
         borderColor="lid.stroke">
         <Text fontSize={{ base: '24px', sm: '36px' }} fontWeight="bold">
-          Deposit ETH for DARB
+          Deposit ETH for DETS
         </Text>
         <Text fontSize="18px" color="blue.500">
           Minimum 0.01 ETH, Maximum 20 ETH
@@ -56,7 +56,7 @@ export default function DepositForm({
           Your Available Max: {shortenDecimal(fromWei(availableMax))} ETH
         </Text>
         <Text fontSize="18px">
-          Estimated DARB:{' '}
+          Estimated DETS:{' '}
           {!val
             ? '0'
             : shortenDecimal(

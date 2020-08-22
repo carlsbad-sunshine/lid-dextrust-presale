@@ -16,7 +16,7 @@ export default function StartTimer({ expiryTimestamp }) {
       mr="auto"
       textAlign="center">
       <Text fontSize={{ base: '28px', sm: '36px' }} fontWeight="bold">
-        DARB Presale starts in
+        DETS Presale starts in
       </Text>
       <CountDown expiryTimestamp={expiryTimestamp} />
     </Box>

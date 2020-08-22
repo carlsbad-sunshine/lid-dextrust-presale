@@ -16,7 +16,7 @@ export default function EndTimer({ expiryTimestamp }) {
       mr="auto"
       textAlign="center">
       <Text fontSize={{ base: '28px', sm: '36px' }} fontWeight="bold">
-        DARB Presale ends in
+        DETS Presale ends in
       </Text>
       <CountDown
         expiryTimestamp={expiryTimestamp == null ? new Date() : expiryTimestamp}
