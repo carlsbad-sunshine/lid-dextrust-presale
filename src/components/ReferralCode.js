@@ -6,7 +6,7 @@ import { shortEther } from '../utils';
 export default function ReferralCode({
   address,
   earnedReferrals,
-  referralCount
+  referralCounts
 }) {
   return (
     <Box
@@ -63,8 +63,14 @@ export default function ReferralCode({
         w="100%"
         gap="20px"
         mb="40px"
-        templateRows={{ base: 'repeat(2, 1fr)', md: 'max-content' }}
-        templateColumns={{ base: 'auto', md: 'repeat(2, minmax(0, 1fr))' }}>
+        templateRows={{
+          base: 'repeat(2, 1fr)',
+          md: 'max-content'
+        }}
+        templateColumns={{
+          base: 'auto',
+          md: 'repeat(2, minmax(0, 1fr))'
+        }}>
         <Box
           w="100%"
           borderRadius="5px"
@@ -76,7 +82,7 @@ export default function ReferralCode({
             Account number of referrals
           </Text>
           <Text fontSize="38px" w="100%" fontWeight="bold">
-            {referralCount}
+            {referralCounts}
           </Text>
         </Box>
         <Box
