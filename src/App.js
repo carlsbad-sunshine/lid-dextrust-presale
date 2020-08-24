@@ -370,6 +370,8 @@ function App() {
           <EndTimer expiryTimestamp={endTime} />
           <DepositForm
             rate={currentPrice}
+            hardcap={hardcap}
+            totalEth={totalEth}
             cap={toWei('20')}
             accountDeposit={accountEthDeposit}
             setVal={setDepositVal}
