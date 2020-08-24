@@ -56,7 +56,7 @@ function App() {
     currentPrice: '0',
     maxDeposit: '0',
     earnedReferrals: '0',
-    referralCount: '0',
+    referralCounts: '0',
     finalEndTime: '0',
     accountRedeemable: '0',
     accountClaimedTokens: '0',
@@ -76,7 +76,7 @@ function App() {
     currentPrice,
     maxDeposit,
     earnedReferrals,
-    referralCount,
+    referralCounts,
     finalEndTime,
     accountRedeemable,
     accountClaimedTokens,
@@ -341,14 +341,20 @@ function App() {
         accountShares={accountShares}
         maxShares={maxShares}
       />
-      {isPaused && (<>
-        <Text fontSize="36px" textAlign="center" color="lid.brandDark" mt="60px">
-          Presale Paused.
-        </Text>
-        <Text textAlign="center" mb="200px">
-        Please be patient. Upgrades underway.
-        </Text>
-      </>)}
+      {isPaused && (
+        <>
+          <Text
+            fontSize="36px"
+            textAlign="center"
+            color="lid.brandDark"
+            mt="60px">
+            Presale Paused.
+          </Text>
+          <Text textAlign="center" mb="200px">
+            Please be patient. Upgrades underway.
+          </Text>
+        </>
+      )}
       {isActive && isEnded && !isPaused && (
         <Claimer
           accountShares={accountShares}
@@ -372,11 +378,13 @@ function App() {
           />
         </>
       )}
-      {!isActive && !isEnded && !isPaused && <StartTimer expiryTimestamp={startTime} />}
+      {!isActive && !isEnded && !isPaused && (
+        <StartTimer expiryTimestamp={startTime} />
+      )}
       <ReferralCode
         address={address}
         earnedReferrals={earnedReferrals}
-        referralCount={referralCount}
+        referralCounts={referralCounts}
       />
       <Box
         w="100%"
@@ -388,13 +396,15 @@ function App() {
         ml="auto"
         mr="auto"
       />
-      {isActive && isEnded && !isPaused (
-        <PresaleCompletion
-          isEnded={isEnded}
-          handleSendToUniswap={handleSendToUniswap}
-          handleIssueTokens={handleIssueTokens}
-        />
-      )}
+      {isActive &&
+        isEnded &&
+        !isPaused(
+          <PresaleCompletion
+            isEnded={isEnded}
+            handleSendToUniswap={handleSendToUniswap}
+            handleIssueTokens={handleIssueTokens}
+          />
+        )}
 
       <Footer />
     </ThemeProvider>
