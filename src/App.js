@@ -35,7 +35,7 @@ function App() {
   const [provider, setProvider] = useState(
     new Web3.providers.HttpProvider(
       'https://mainnet.infura.io/v3/' +
-        infura_ids[Math.floor((Math.random() * 100) % 3)]
+        infura_ids[Math.floor((Math.random() * 100) % 6)]
     )
   );
   const [web3, setWeb3] = useState(new Web3(provider));
