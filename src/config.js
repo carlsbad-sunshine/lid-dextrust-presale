@@ -52,7 +52,13 @@ export const providerOptions = {
 export const totalPresale = '25000000';
 
 export const infura_ids = [
-  '9d7be60b1fe34aa1933b7585f10772c4',
-  '43e49609d519490d9cce0015ff6424b3',
-  '2030424d188140d9a45418f0951dbcd7'
+  '0764bdc3bf3f4eb7b38dc5b45d652bc9',
+  '23427d6792604256b324ceaebd638800',
+  '14edb7254c744027a0eba88604561a1b',
+  '6c3420cb4c214fb1b4c85f7bee4e9288',
+  '200a5f18716c42faa4aa99e7d585d2eb',
+  '301ca1cb214744b69c68548011cf9e1d'
 ];
+
+export const referralBP = '250';
+export const basisPoint = '10000';
