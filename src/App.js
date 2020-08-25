@@ -388,7 +388,7 @@ function App() {
         ml="auto"
         mr="auto"
       />
-      {isActive && isEnded && !isPaused (
+      {isActive && isEnded && !isPaused && (
         <PresaleCompletion
           isEnded={isEnded}
           handleSendToUniswap={handleSendToUniswap}
